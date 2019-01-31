@@ -1,0 +1,34 @@
+.racer {
+  display: block;
+}
+
+header {
+  text-align: center;
+}
+
+#game {
+  width:90%;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 100px;
+  height:100px;
+  margin: 20px;
+  background-color: blue;
+}
+
+.avatar1{
+  background-image: url("server.jpeg");
+  background-size: cover;
+}
+
+.avatar2 {
+  background-image: url("coffee.jpeg");
+  background-size: 100% 100%;
+}
+
+
+#game {
+  background-color: red;
+}
