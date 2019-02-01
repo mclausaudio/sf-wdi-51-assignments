@@ -9,12 +9,18 @@ let marginLeft = 0;
 //amount of distance opponent has moved
 let opponentDistance = 0;
 // increase difficulty to give the opponent a chance to move further
-let difficulty = 10;
+let difficulty = 7;
 //amount of margin added each click -- determined in play func
 let movement;
 //uindefined var to be assigned to setInterval
 let timer;
 
+//scoreboard
+let player1Score = document.getElementById('player1Score');
+let player2Score = document.getElementById('player2Score');
+
+
+//controls
 document.body.addEventListener('keydown', function() {
   //if we are passed the needed margin, run the win checker on our character
   if (marginLeft >= winCondition) {
@@ -25,19 +31,18 @@ document.body.addEventListener('keydown', function() {
     player1.style.paddingLeft = `${marginLeft}%`
     console.log('click')
   }
-
 });
 
+//game modes
 function play() {
   movement = 2;
   timer = setInterval(race, 200);
 }
-
 function stop(){
   movement = 0;
   clearInterval(timer);
 }
-
+//game mechanics
 function race(){
   opponentDistance += Math.floor(Math.random() * difficulty);
   // if statement to make sure the random increment doesn't go about the win condition
@@ -56,7 +61,7 @@ function winChecker(arrayOfPlayers){
       if(arrayOfPlayers[i].id === 'player2'){
         winner = 'Spilt Cup Of Coffee';
       } else {
-        winner = 'The result of thousands of years of technological advancement & human ingenuity';
+        winner = 'Thousands of years of technological advancement & human ingenuity?';
       }
       document.getElementById('score').innerHTML = `<h1>${winner} wins!</h1>`;
       stop();
@@ -64,10 +69,6 @@ function winChecker(arrayOfPlayers){
   }
 }
 
-function stop(){
-  movement = 0;
-  clearInterval(timer);
-}
-
+//start the game
 play();
 
