@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+
+/*.wrapper {
+  margin: 0 auto;
+  width:950px;
+}*/
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom:3em;
+}
+
+/*.store-container {
+  display:flex;
+  max-width:100%;
+}*/
+
+/*main div {
+  text-align: center;
+  width: 50%;
+}*/
+
+#list-display {
+  list-style: none;
+}

@@ -9,7 +9,7 @@ let marginLeft = 0;
 //amount of distance opponent has moved
 let opponentDistance = 0;
 // increase difficulty to give the opponent a chance to move further
-let difficulty = 7;
+let difficulty = 5;
 //amount of margin added each click -- determined in play func
 let movement;
 //uindefined var to be assigned to setInterval

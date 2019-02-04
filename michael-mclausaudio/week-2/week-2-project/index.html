@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header class="jumbotron">
+  <h1>Shopping List</h1>
+</header>
+  <nav>
+    <ul class="nav nav-pills d-flex justify-content-center">
+      <li id="cat1" class="nav-link nav-item mr-5">Food</li>
+      <li id="cat2" class="nav-link nav-item mr-5">Drinks</li>
+      <li id="cat3" class="nav-link nav-item">Snacks</li>
+    </ul>
+  </nav>
+<main class="container">
+  <div class="row">
+    <div id="category-display" class='col-md-9 d-flex flex-wrap'>
+
+    </div>
+    <div class="col">
+      <ul id="list-display" class="list-group">
+
+      </ul>
+      <p>Total: $<span id="cart-total">0</span></p>
+    </div>
+
+  </div>
+</main>
+
+<script type="text/javascript" src="inventory.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
