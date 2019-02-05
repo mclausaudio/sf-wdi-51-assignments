@@ -21,6 +21,7 @@ let pho = new InventoryItem('Pho', './images/pho.jpeg', 'food', 9);
 foodInventory.push(pho);
 
 
+
 let beer = new InventoryItem('Beer', './images/beer.jpeg', 'drink', 3.50);
 foodInventory.push(beer);
 let wine = new InventoryItem('Wine', './images/wine.jpeg', 'drink', 4);
