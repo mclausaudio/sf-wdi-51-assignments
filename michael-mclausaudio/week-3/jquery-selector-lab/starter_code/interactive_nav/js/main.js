@@ -4,7 +4,9 @@ let lastClick = '';
   $('#main-nav').on('click', 'a', function(){
     let panel = $(this).data('related-panel');
     let target = '#' + panel;
-    $(lastClick).slideToggle();
+    if(target !== lastClick){
+      $(lastClick).slideUp();
+    };
     $(target).slideToggle();
     lastClick = target;
   });
