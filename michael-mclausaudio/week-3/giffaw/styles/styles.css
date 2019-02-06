@@ -1,0 +1,14 @@
+.gif-gallery{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.gif-container {
+  height:30%;
+  width:30%;
+  padding:10px;
+}
+
+.gif-container img {
+  width:100%;
+}
