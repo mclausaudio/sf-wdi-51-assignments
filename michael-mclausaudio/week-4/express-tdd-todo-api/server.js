@@ -51,7 +51,7 @@ app.get('/api/todos/search', (req, res) => {
   let results = []
   // console.log(req.query);
   todos.forEach((todo) =>{
-    console.log(todo.task.indexOf(req.query.q))
+    console.log(todo.task.indexOf(req.query.q));
     if(todo.task.indexOf(req.query.q) >= 0) {
       console.log(todo)
       results.push(todo)
