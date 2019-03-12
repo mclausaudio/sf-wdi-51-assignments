@@ -18,7 +18,6 @@ export default class SearchContainer extends Component {
 
   onSearchSubmit = e => {
     e.preventDefault();
-
     axios
       .get(
         `https://api.giphy.com/v1/gifs/search?api_key=ebZaNTs7nYUFw5m5X87u1ixBL2pIp9Bw&q=${
