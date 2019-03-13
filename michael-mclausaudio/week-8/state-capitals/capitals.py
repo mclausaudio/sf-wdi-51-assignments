@@ -190,7 +190,6 @@ def state_capitals():
     # why doesn't before work??
     # I'm trying to while look until the user puts in an appropriate response
     # while play_again != 'yes' or play_again != 'no':
-    #     print(play_again)
     #     play_again = input(
     #         "Not sure what you're trying to say... please put in 'yes' or 'no'.")
 
